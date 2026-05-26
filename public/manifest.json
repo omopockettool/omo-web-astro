@@ -1,0 +1,16 @@
+{
+  "name": "OMO - Suite de Apps Móviles",
+  "short_name": "OMO",
+  "description": "Filosofía de un alma despierta que integra la tecnología en su camino hacia la libertad",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "assets/icon.png",
+      "sizes": "324x327",
+      "type": "image/png"
+    }
+  ]
+} 

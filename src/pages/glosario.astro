@@ -1,0 +1,68 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NavbarBack from '../components/NavbarBack.astro';
+import Footer from '../components/Footer.astro';
+---
+<BaseLayout title="Glosario — OMO" page="glossary">
+  <NavbarBack />
+
+  <main class="glosario-container">
+
+    <header class="glosario-header">
+      <div class="glosario-header-top">
+        <span class="glosario-edition" data-i18n="header.edition">Primera edición</span>
+        <span class="glosario-divider">—</span>
+        <span class="glosario-edition" data-i18n="header.system">Ecosistema OMO</span>
+      </div>
+      <h1 class="glosario-title" data-i18n="header.title">Glosario</h1>
+      <p class="glosario-subtitle" data-i18n="header.sub">Términos y conceptos del ecosistema OMO, ordenados alfabéticamente.</p>
+      <div class="glosario-rule"></div>
+    </header>
+
+    <div class="glosario-entries">
+
+      <article class="glosario-entry">
+        <div class="entry-term-block">
+          <h2 class="entry-term">OMO</h2>
+          <span class="entry-pos" data-i18n="omo.pos">acrónimo</span>
+        </div>
+        <div class="entry-body">
+          <p class="entry-definition" data-i18n-html="omo.def1"><span class="entry-num">1.</span> <em>On My Own.</em> Expresión que da nombre al ecosistema y define su filosofía central: herramientas que el usuario controla de forma autónoma, sin dependencias externas.</p>
+          <p class="entry-definition" data-i18n-html="omo.def2"><span class="entry-num">2.</span> Nombre de la app madre del ecosistema. Una experiencia de presencia pura que activa la cámara frontal y trasera para mostrar quién eres y dónde estás.</p>
+          <p class="entry-usage" data-i18n="omo.usage">"OMO no compite con apps. OMO compite con el ruido."</p>
+        </div>
+      </article>
+
+      <div class="entry-separator"></div>
+
+      <article class="glosario-entry">
+        <div class="entry-term-block">
+          <h2 class="entry-term">Pocket Tool</h2>
+          <span class="entry-pos" data-i18n="pocket.pos">sustantivo</span>
+        </div>
+        <div class="entry-body">
+          <p class="entry-definition" data-i18n-html="pocket.def1"><span class="entry-num">1.</span> Micro-aplicación minimalista diseñada para un único propósito esencial. Se distingue de una app convencional por su alcance deliberadamente limitado, su interfaz austera y su filosofía de no-interrupción.</p>
+          <p class="entry-definition" data-i18n-html="pocket.def2"><span class="entry-num">2.</span> Unidad básica del ecosistema OMO. Cada Pocket Tool es independiente, coherente con la filosofía OMO y diseñada para acompañar la vida, no para captarla.</p>
+          <p class="entry-usage" data-i18n="pocket.usage">"OMONI es la primera Pocket Tool. Una pregunta, una respuesta: ¿cuánto te cuesta vivir hoy?"</p>
+        </div>
+      </article>
+
+      <div class="entry-separator"></div>
+
+      <article class="glosario-entry">
+        <div class="entry-term-block">
+          <h2 class="entry-term">uxOS</h2>
+          <span class="entry-pos" data-i18n="uxos.pos">sustantivo</span>
+        </div>
+        <div class="entry-body">
+          <p class="entry-definition" data-i18n-html="uxos.def1"><span class="entry-num">1.</span> <em>User Experience Operating System.</em> Sistema operativo experiencial que no gestiona hardware, sino estados internos del usuario: atención, presencia, hábitos, consciencia financiera.</p>
+          <p class="entry-definition" data-i18n-html="uxos.def2"><span class="entry-num">2.</span> Concepto introducido por OMO para describir un ecosistema de micro-apps con estética unificada, filosofía compartida e interacciones táctiles y ergonómicas. Diseñado para acompañar la vida, no interrumpirla.</p>
+          <p class="entry-usage" data-i18n="uxos.usage">"OMO es el primer uxOS del mundo."</p>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <Footer isInner={true} />
+</BaseLayout>

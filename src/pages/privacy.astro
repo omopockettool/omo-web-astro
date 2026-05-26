@@ -1,0 +1,85 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NavbarBack from '../components/NavbarBack.astro';
+import Footer from '../components/Footer.astro';
+---
+<BaseLayout title="Política de Privacidad — OMO" page="privacy">
+  <NavbarBack />
+
+  <main class="legal-container">
+    <header class="legal-header">
+      <p class="legal-page-label" data-i18n="legal.label">Legal</p>
+      <h1 class="legal-page-title" data-i18n="legal.title">Política de Privacidad</h1>
+      <p class="legal-page-sub" data-i18n="legal.sub">Esta política explica qué información puede tratar OMO, cómo se usa y qué decisiones tomamos para proteger una experiencia más privada y consciente.</p>
+      <div class="legal-meta">
+        <span data-i18n="legal.updated">Última actualización: 25 de mayo de 2026</span>
+        <span data-i18n="legal.domain">Sitio oficial: omopockettool.com</span>
+      </div>
+    </header>
+
+    <div class="legal-content">
+      <section class="legal-section">
+        <h2 class="legal-section-title" data-i18n="privacy.s1.title">1. Enfoque general</h2>
+        <p data-i18n="privacy.s1.p1">OMO nace con una filosofía clara: crear tecnología más humana, con menos ruido y más control para el usuario. Por eso buscamos minimizar la recogida de datos y evitar prácticas invasivas siempre que sea posible.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2 class="legal-section-title" data-i18n="privacy.s2.title">2. Información que podemos tratar</h2>
+        <p data-i18n="privacy.s2.p1">Dependiendo del producto o página que utilices, OMO puede tratar información como:</p>
+        <ul class="legal-list">
+          <li data-i18n="privacy.s2.li1">Datos que introduces tú mismo, como nombre u otra información necesaria para personalizar la experiencia.</li>
+          <li data-i18n="privacy.s2.li2">Mensajes que nos envías al contactarnos por email.</li>
+          <li data-i18n="privacy.s2.li3">Datos técnicos mínimos necesarios para el funcionamiento básico del sitio o de la app.</li>
+        </ul>
+        <p data-i18n="privacy.s2.p2">En la versión actual de OMONI, los datos del usuario pueden mantenerse localmente en el dispositivo y no se utilizan para tracking publicitario.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2 class="legal-section-title" data-i18n="privacy.s3.title">3. Qué no hacemos</h2>
+        <ul class="legal-list">
+          <li data-i18n="privacy.s3.li1">No vendemos tus datos personales.</li>
+          <li data-i18n="privacy.s3.li2">No usamos tracking publicitario agresivo como base del producto.</li>
+          <li data-i18n="privacy.s3.li3">No activamos funciones futuras de nube o newsletter sin una acción y consentimiento claros por parte del usuario.</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2 class="legal-section-title" data-i18n="privacy.s4.title">4. Para qué usamos la información</h2>
+        <p data-i18n="privacy.s4.p1">La información que el usuario comparte puede utilizarse para:</p>
+        <ul class="legal-list">
+          <li data-i18n="privacy.s4.li1">Permitir el funcionamiento básico de la experiencia.</li>
+          <li data-i18n="privacy.s4.li2">Responder a mensajes o solicitudes de soporte.</li>
+          <li data-i18n="privacy.s4.li3">Mejorar el producto y corregir errores.</li>
+          <li data-i18n="privacy.s4.li4">Ofrecer futuras funciones opcionales solo si el usuario decide activarlas.</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2 class="legal-section-title" data-i18n="privacy.s5.title">5. Conservación de datos</h2>
+        <p data-i18n="privacy.s5.p1">Conservamos la información solo durante el tiempo necesario para la finalidad correspondiente o mientras exista una obligación legal aplicable. Si ciertos datos permanecen localmente en tu dispositivo, su gestión dependerá del uso que hagas de la app y de las opciones de exportación, backup o eliminación disponibles.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2 class="legal-section-title" data-i18n="privacy.s6.title">6. Compartición con terceros</h2>
+        <p data-i18n="privacy.s6.p1">OMO puede usar servicios técnicos necesarios para operar determinadas partes del sitio o del ecosistema. Cuando eso ocurra, intentaremos limitar al máximo los datos compartidos y elegir soluciones razonables para un producto pequeño e independiente.</p>
+        <p data-i18n="privacy.s6.p2">No compartimos información personal con terceros para fines publicitarios propios de esos terceros.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2 class="legal-section-title" data-i18n="privacy.s7.title">7. Tus derechos</h2>
+        <p data-i18n="privacy.s7.p1">Si nos has compartido datos personales por canales que gestionamos directamente, puedes solicitar información, rectificación o eliminación, dentro de lo permitido por la ley y por la viabilidad técnica del producto en cada etapa.</p>
+        <div class="legal-contact-card">
+          <p><strong data-i18n="privacy.s7.contactLabel">Contacto:</strong> <a href="mailto:omopockettool@gmail.com">omopockettool@gmail.com</a></p>
+          <p class="legal-inline-note" data-i18n="privacy.s7.note">Si escribes por privacidad, indica el contexto y el producto al que se refiere tu solicitud.</p>
+        </div>
+      </section>
+
+      <section class="legal-section">
+        <h2 class="legal-section-title" data-i18n="privacy.s8.title">8. Cambios en esta política</h2>
+        <p data-i18n="privacy.s8.p1">Podemos actualizar esta política para reflejar cambios en el sitio, en las apps o en nuestras prácticas. La versión vigente será siempre la publicada en esta página.</p>
+      </section>
+    </div>
+  </main>
+
+  <Footer isInner={true} />
+</BaseLayout>

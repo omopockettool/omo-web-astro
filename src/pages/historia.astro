@@ -1,0 +1,337 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NavbarBack from '../components/NavbarBack.astro';
+import Footer from '../components/Footer.astro';
+---
+<BaseLayout title="Mi Historia — Dennis, OMO" page="story">
+  <NavbarBack />
+
+  <main class="historia-container">
+
+    <header class="historia-header">
+      <p class="historia-page-label" data-i18n="hero.label">On My Own</p>
+      <h1 class="historia-page-title" data-i18n="hero.title">Mi Historia</h1>
+      <p class="historia-page-sub" data-i18n="hero.sub">Esto no es la historia de una empresa. Es la historia de un chico que sintió algo encenderse dentro de él la primera vez que vio una pantalla deslizarse, y nunca pudo olvidarlo.</p>
+    </header>
+
+    <blockquote class="historia-quote" data-i18n="hero.quote">
+      "Solo soy un ser humano con el anhelo de aportar con mi visión de cómo usar la tecnología para el bien y la evolución de nuestra especie."
+    </blockquote>
+
+    <div class="historia-timeline">
+
+      <div class="timeline-node">
+        <div class="timeline-marker timeline-marker--year"><span>'13</span></div>
+        <div class="timeline-content-card">
+          <p class="timeline-year-label">2013</p>
+          <h2 class="timeline-title" data-i18n="n2013.title">El primer smartphone</h2>
+          <p class="timeline-body" data-i18n="n2013.p1">Desde pequeño fui emprendedor. Mis padres me enseñaron a hacer las cosas por nosotros mismos, con nuestras manos, a nuestra manera.</p>
+          <p class="timeline-body" data-i18n="n2013.p2">A los 16 años una prima consiguió su primer smartphone y me lo prestaba para conectarme a Facebook. Tener una red social en el bolsillo me explotaba la cabeza. Pero lo que de verdad me dejó sin palabras no fue la app — fue un gesto de Android: ese panel de notificaciones que bajaba y subía con una fluidez asombrosa. Tan natural. Tan humano.</p>
+          <p class="timeline-body" data-i18n="n2013.p3">Me pregunté: ¿cómo puede algo digital sentirse tan vivo?</p>
+        </div>
+      </div>
+
+      <div class="timeline-connector"></div>
+
+      <div class="timeline-node">
+        <div class="timeline-marker timeline-marker--year"><span>'15</span></div>
+        <div class="timeline-content-card">
+          <p class="timeline-year-label">2015</p>
+          <h2 class="timeline-title" data-i18n="n2015.title">Hola, computadora</h2>
+          <p class="timeline-body" data-i18n="n2015.p1">A los 17 empecé a hacerme preguntas más grandes: ¿cómo funcionan las computadoras? ¿Por qué el ser humano intenta no sentirse solo? Mi mundo se expandía de una manera que aún no sabía explicar, pero sentía dentro de mí un fuego que se despertaba.</p>
+          <p class="timeline-body" data-i18n="n2015.p2">Empecé a ver videos en YouTube de cómo programar en C. No para aprender C como tal — sino para empezar a hablar con las máquinas. Después encontré Android Studio y me copié de tutoriales sin entender nada. No importaba. Se sentía bien.</p>
+          <p class="timeline-body" data-i18n="n2015.p3">Días después llevé al colegio mi primera app. En realidad no hacía nada: era una lista de la compra. La enseñé a mis compañeros. Ellos la miraron. Yo sonreí.</p>
+          <button
+            class="timeline-thumb-btn timeline-thumb-btn--square"
+            data-lightbox-src="/assets/grocery_android.png"
+            data-lightbox-caption="Primera app — lista de la compra"
+            aria-label="Ver imagen"
+          >
+            <img
+              src="/assets/grocery_android.png"
+              alt="Primera app — lista de la compra"
+              class="timeline-thumb timeline-thumb--square"
+            />
+            <span class="timeline-thumb-label" data-i18n="n2015.image">Fig. 01  Primera app - lista de la compra</span>
+          </button>
+          <div class="timeline-chip-row">
+            <span class="timeline-chip" data-i18n="n2015.chip1">Android Studio</span>
+            <span class="timeline-chip" data-i18n="n2015.chip2">Primera app</span>
+            <span class="timeline-chip" data-i18n="n2015.chip3">Lista de la compra</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-connector"></div>
+
+      <div class="timeline-node">
+        <div class="timeline-marker timeline-marker--year"><span>'17</span></div>
+        <div class="timeline-content-card">
+          <p class="timeline-year-label">2017</p>
+          <h2 class="timeline-title" data-i18n="n2017.title">La universidad y el diseño</h2>
+          <p class="timeline-body" data-i18n="n2017.p1">A los 19 entré a estudiar ingeniería de software. En los cinco años y medio de carrera vi materias increíbles, pero hubo una que lo cambió todo: Diseño de Interacción y Experiencia de Usuario. De las cosas más importantes que he podido encontrar en mi vida.</p>
+          <p class="timeline-body" data-i18n="n2017.p2">Descubrí que hacer una app no era solo programar — era entender a las personas. Fue entonces cuando empecé a soñar con tener un Mac o un iPhone: no por el estatus, sino por el cuidado que Apple pone en cada detalle de sus interfaces. Quería hacer lo mismo.</p>
+          <button
+            class="timeline-thumb-btn timeline-thumb-btn--square"
+            data-lightbox-src="/assets/dennis-graduado.JPG"
+            data-lightbox-caption="Dennis graduado"
+            aria-label="Ver imagen de Dennis graduado"
+          >
+            <img
+              src="/assets/dennis-graduado.JPG"
+              alt="Dennis graduado"
+              class="timeline-thumb timeline-thumb--square"
+            />
+            <span class="timeline-thumb-label">Fig. 02  Dennis graduado</span>
+          </button>
+          <div class="timeline-chip-row">
+            <span class="timeline-chip" data-i18n="n2017.chip1">Ingeniería de Software</span>
+            <span class="timeline-chip" data-i18n="n2017.chip2">UX / Diseño de Interacción</span>
+            <span class="timeline-chip" data-i18n="n2017.chip3">El sueño del Mac</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-connector"></div>
+
+      <div class="timeline-node">
+        <div class="timeline-marker timeline-marker--year"><span>'20</span></div>
+        <div class="timeline-content-card">
+          <p class="timeline-year-label">2020</p>
+          <h2 class="timeline-title" data-i18n="n2020.title">El jardín y el Mac</h2>
+          <p class="timeline-body" data-i18n="n2020.p1">A los 21 tomé una decisión. Me fui a Estados Unidos a trabajar como jardinero para comprarme una Mac. Corté césped, planté árboles, cuidé jardines. Cada día que metía lo que ganaba en la hucha, tenía más fuerzas para seguir esforzándome.</p>
+          <p class="timeline-body" data-i18n="n2020.p2">El día que tuve el dinero recuerdo bien que llovía. Mi tía me llevó al Apple Store más cercano, y allí, por fin, conseguí el Mac que siempre había soñado.</p>
+          <p class="timeline-body" data-i18n="n2020.p3">Con esa ilusión empecé a trastear tanto en Logic Pro X como en Ionic. Era el inicio de mi camino hacia la libertad creativa.</p>
+          <button
+            class="timeline-thumb-btn timeline-thumb-btn--square"
+            data-lightbox-src="/assets/dennis-jardinero.JPG"
+            data-lightbox-caption="Dennis jardinero"
+            aria-label="Ver imagen de Dennis jardinero"
+          >
+            <img
+              src="/assets/dennis-jardinero.JPG"
+              alt="Dennis jardinero"
+              class="timeline-thumb timeline-thumb--square"
+            />
+            <span class="timeline-thumb-label" data-i18n="n2020.image">Dennis trabajando de jardinero</span>
+          </button>
+          <div class="timeline-chip-row">
+            <span class="timeline-chip" data-i18n="n2020.chip1">Primer Mac</span>
+            <span class="timeline-chip" data-i18n="n2020.chip2">Logic Pro X</span>
+            <span class="timeline-chip" data-i18n="n2020.chip3">Ionic</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-connector"></div>
+
+      <div class="timeline-node">
+        <div class="timeline-marker timeline-marker--year"><span>'23</span></div>
+        <div class="timeline-content-card">
+          <p class="timeline-year-label">2023</p>
+          <h2 class="timeline-title">On My Own</h2>
+          <p class="timeline-body" data-i18n-html="n2023.p1">Una noche soltando ideas, el nombre llegó solo: <em>On My Own</em>. Porque en este espacio todo se hace a nuestra manera.</p>
+          <p class="timeline-body" data-i18n="n2023.p2">Mi primer intento de app fue con Ionic, un framework híbrido que conocía por su parecido a Angular. Pero después de analizar su rendimiento no me convenció — necesitaba algo más nativo, algo que se sintiera real.</p>
+          <div class="timeline-media-row">
+            <button
+              class="timeline-thumb-btn timeline-thumb-btn--square"
+              data-lightbox-src="/assets/onmyown-logo.png"
+              data-lightbox-caption="On My Own"
+              aria-label="Ver logo de On My Own"
+            >
+              <img
+                src="/assets/onmyown-logo.png"
+                alt="Logo de On My Own"
+                class="timeline-thumb timeline-thumb--square-logo"
+              />
+              <span class="timeline-thumb-label" data-i18n="n2023.image">On My Own</span>
+            </button>
+            <button
+              class="timeline-thumb-btn timeline-thumb-btn--square"
+              data-lightbox-src="/assets/wall.jpg"
+              data-lightbox-caption="Mapa de navegacion de OMONI en la pared"
+              aria-label="Ver mapa de navegacion de OMONI en la pared"
+            >
+              <img
+                src="/assets/wall.jpg"
+                alt="Mapa de navegacion de OMONI en la pared"
+                class="timeline-thumb timeline-thumb--square"
+              />
+              <span class="timeline-thumb-label" data-i18n="n2023.image2">Mapa de navegacion de OMONI en la pared</span>
+            </button>
+          </div>
+          <div class="timeline-chip-row">
+            <span class="timeline-chip" data-i18n="n2023.chip1">On My Own</span>
+            <span class="timeline-chip" data-i18n="n2023.chip2">Primer intento Ionic</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-connector"></div>
+
+      <div class="timeline-node">
+        <div class="timeline-marker timeline-marker--year"><span>'24</span></div>
+        <div class="timeline-content-card">
+          <p class="timeline-year-label">2024</p>
+          <h2 class="timeline-title" data-i18n="n2024.title">Ionic, Flutter y la búsqueda del alma</h2>
+          <p class="timeline-body" data-i18n="n2024.p1">Pasé un año aprendiendo Ionic. Luego otro año con Flutter. Ninguno terminó de convencerme. No era una cuestión técnica — era que esas apps no me hacían sentir nada. Eran mis primeros intentos de crear algo que me llegara al alma, que me hiciera sentir algo. Y seguía buscando.</p>
+          <div class="timeline-media-row timeline-media-gallery">
+            <button
+              class="timeline-thumb-btn timeline-thumb-btn--gallery"
+              data-lightbox-src="/assets/ionic-1.png"
+              data-lightbox-caption="Ionic 1"
+              aria-label="Ver captura Ionic 1"
+            >
+              <img
+                src="/assets/ionic-1.png"
+                alt="On My Own, captura Ionic 1"
+                class="timeline-thumb timeline-thumb--appshot"
+              />
+              <span class="timeline-thumb-label" data-i18n="n2024.image">Ionic 1</span>
+            </button>
+            <button
+              class="timeline-thumb-btn timeline-thumb-btn--gallery"
+              data-lightbox-src="/assets/ionic-2.png"
+              data-lightbox-caption="Ionic 2"
+              aria-label="Ver captura Ionic 2"
+            >
+              <img
+                src="/assets/ionic-2.png"
+                alt="On My Own, captura Ionic 2"
+                class="timeline-thumb timeline-thumb--appshot"
+              />
+              <span class="timeline-thumb-label" data-i18n="n2024.image2">Ionic 2</span>
+            </button>
+            <button
+              class="timeline-thumb-btn timeline-thumb-btn--gallery"
+              data-lightbox-src="/assets/ionic-3.png"
+              data-lightbox-caption="Ionic 3"
+              aria-label="Ver captura Ionic 3"
+            >
+              <img
+                src="/assets/ionic-3.png"
+                alt="On My Own, captura Ionic 3"
+                class="timeline-thumb timeline-thumb--appshot"
+              />
+              <span class="timeline-thumb-label" data-i18n="n2024.image3">Ionic 3</span>
+            </button>
+            <button
+              class="timeline-thumb-btn timeline-thumb-btn--gallery"
+              data-lightbox-src="/assets/omo-ni-flutter.png"
+              data-lightbox-caption="Flutter"
+              aria-label="Ver captura de la version Flutter"
+            >
+              <img
+                src="/assets/omo-ni-flutter.png"
+                alt="On My Own, version Flutter"
+                class="timeline-thumb timeline-thumb--appshot"
+              />
+              <span class="timeline-thumb-label" data-i18n="n2024.image4">Flutter</span>
+            </button>
+          </div>
+          <div class="timeline-chip-row">
+            <span class="timeline-chip" data-i18n="n2024.chip1">Flutter</span>
+            <span class="timeline-chip" data-i18n="n2024.chip2">Ionic</span>
+            <span class="timeline-chip" data-i18n="n2024.chip3">Búsqueda de lo nativo</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-connector"></div>
+
+      <div class="timeline-node">
+        <div class="timeline-marker timeline-marker--year"><span>'25</span></div>
+        <div class="timeline-content-card">
+          <p class="timeline-year-label">2025</p>
+          <h2 class="timeline-title" data-i18n="n2025.title">IA, Pocket Tools y el uxOS</h2>
+          <p class="timeline-body" data-i18n="n2025.p1">Cansado de tener que dominar primero una tecnología antes de poder expresarme, y con el boom de la IA generativa, decidí emprender un camino nuevo y más emocionante: Xcode, Claude Code, Codex, Cursor. Aprendí sobre la marcha porque necesitaba expresarme ya mismo. Aunque aún no domino Swift, logré avanzar gracias a mis conocimientos como ingeniero. Solo, pero con paso firme.</p>
+          <p class="timeline-body" data-i18n-html="n2025.p2">Fue entonces cuando acuñé el término <em>Pocket Tool</em>: herramientas de bolsillo simples, amigables, que hacen una sola cosa muy bien. La primera me la pidió mi propio padre — una app para saber cuánto nos cuesta vivir.</p>
+          <p class="timeline-body" data-i18n-html="n2025.p3">De ahí nació algo más grande: <em>uxOS</em>. Un catálogo de Pocket Tools que interactúan entre sí. No un sistema operativo de hardware — un ecosistema humano centrado en la experiencia de las personas. Sin secuestrar la atención. Queremos brindar calma. Desde el amor.</p>
+          <div class="timeline-image-placeholder"><span data-i18n="n2025.image">Fig. 06  Mockups OMONI — primeras versiones</span></div>
+          <div class="timeline-chip-row">
+            <span class="timeline-chip">Xcode + Swift</span>
+            <span class="timeline-chip">Claude Code</span>
+            <span class="timeline-chip">Pocket Tool</span>
+            <span class="timeline-chip">uxOS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-connector timeline-connector--open"></div>
+
+      <div class="timeline-node">
+        <div class="timeline-marker timeline-marker--year timeline-marker--open"><span>'26</span></div>
+        <div class="timeline-content-card timeline-card--open">
+          <p class="timeline-year-label">2026</p>
+          <h2 class="timeline-title">OMO</h2>
+          <p class="timeline-body" data-i18n="n2026.p1">El nombre OMO lo aportó un diseñador del equipo con una visión impresionante del alcance que podríamos llegar a tener. Y aquí nos encontramos: presentando OMO y su primera Pocket Tool, OMONI.</p>
+          <p class="timeline-body" data-i18n="n2026.p2">No sé nada de marketing, nada de ventas. Pero mientras siga vivo, haré lo que esté en mi mano para que tú, miembro de la comunidad OMO, te sientas comprendido, amado, y sientas el detalle y el compromiso que hay detrás de cada herramienta que construimos. Esto apenas empieza.</p>
+          <button
+            class="timeline-thumb-btn timeline-thumb-btn--square"
+            data-lightbox-src="/assets/icon.png"
+            data-lightbox-caption="OMO"
+            aria-label="Ver icono de OMO"
+          >
+            <img
+              src="/assets/icon.png"
+              alt="Icono de OMO"
+              class="timeline-thumb timeline-thumb--square-logo"
+            />
+            <span class="timeline-thumb-label" data-i18n="n2026.image">OMO</span>
+          </button>
+          <a href="/" class="learn-more-button" style="align-self:flex-start;margin-top:0.25rem;">
+            <span data-i18n="n2026.cta">Ver el ecosistema</span>
+            <span class="arrow-icon">→</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <Footer isInner={true} />
+
+  <!-- Lightbox -->
+  <div id="omo-lightbox" class="omo-lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="omo-lightbox-close" aria-label="Cerrar">✕</button>
+    <div class="omo-lightbox-inner">
+      <img id="omo-lightbox-img" src="" alt="" class="omo-lightbox-img" />
+      <p id="omo-lightbox-caption" class="omo-lightbox-caption"></p>
+    </div>
+  </div>
+
+  <script is:inline>
+    const nodes = document.querySelectorAll('.timeline-node');
+    if (nodes.length > 0 && 'IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('timeline-node--visible'); });
+      }, { threshold: 0.1 });
+      nodes.forEach(n => observer.observe(n));
+    } else {
+      nodes.forEach(n => n.classList.add('timeline-node--visible'));
+    }
+
+    const lightbox = document.getElementById('omo-lightbox');
+    const lbImg = document.getElementById('omo-lightbox-img');
+    const lbCaption = document.getElementById('omo-lightbox-caption');
+
+    document.querySelectorAll('.timeline-thumb-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        lbImg.src = btn.dataset.lightboxSrc;
+        lbImg.alt = btn.dataset.lightboxCaption;
+        lbCaption.textContent = btn.dataset.lightboxCaption;
+        lightbox.setAttribute('aria-hidden', 'false');
+        lightbox.classList.add('omo-lightbox--open');
+      });
+    });
+
+    function closeLightbox() {
+      lightbox.classList.remove('omo-lightbox--open');
+      lightbox.setAttribute('aria-hidden', 'true');
+    }
+
+    lightbox.querySelector('.omo-lightbox-close').addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+  </script>
+</BaseLayout>

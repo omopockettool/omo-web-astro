@@ -1,0 +1,22 @@
+---
+interface Props {
+  isInner?: boolean;
+}
+const { isInner = false } = Astro.props;
+const base = isInner ? '/' : '';
+---
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-links">
+      <a href={`${base}historia`} data-i18n="footer.story">Mi Historia</a>
+      <a href={`${base}glosario`} data-i18n="footer.glossary">Glosario</a>
+      <a href={`${base}terms`} data-i18n="footer.terms">Términos</a>
+      <a href={`${base}privacy`} data-i18n="footer.privacy">Privacidad</a>
+      <a href="https://coff.ee/omopockettool" target="_blank" rel="noopener" data-i18n="footer.support">Donaciones</a>
+      <a href="https://github.com/omopockettool" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://instagram.com/omo" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://x.com/omo" target="_blank" rel="noopener">X</a>
+    </div>
+    <div class="footer-signature">Con 🤍 Dennis</div>
+  </div>
+</footer>

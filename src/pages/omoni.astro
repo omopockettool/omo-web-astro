@@ -1,0 +1,67 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NavbarBack from '../components/NavbarBack.astro';
+import Footer from '../components/Footer.astro';
+---
+<BaseLayout title="OMONI — Pocket Tool de dinero" page="omoni-detail">
+  <NavbarBack backLabel="Volver al catálogo" backHref="/" />
+
+  <main class="detail-container">
+    <section class="omoni-detail-card">
+
+      <div class="detail-header">
+        <img src="/assets/OMO_NI.jpg" alt="OMO-NI" class="detail-icon" />
+        <div class="detail-header-content">
+          <div class="detail-title-row">
+            <h1 class="detail-title">OMO-NI</h1>
+            <span class="status-badge in-progress">
+              <span data-i18n="status.progress">En progreso</span>
+              <span class="led-indicator"></span>
+            </span>
+          </div>
+          <span class="detail-chakra-label" data-i18n="label.tool">Pocket Tool Nº 1</span>
+        </div>
+        <div class="detail-apple-link disabled">
+          <img src="/assets/apple-store-icon.svg" alt="App Store - Coming Soon" class="detail-apple-icon" data-i18n-alt="apple.alt" />
+        </div>
+      </div>
+
+      <div class="detail-description-grid">
+        <div class="detail-desc-card">
+          <p data-i18n="desc.one">OMONI está diseñada para despertar consciencia sobre tus gastos y tus recursos.</p>
+        </div>
+        <div class="detail-desc-card">
+          <p data-i18n="desc.two">La primera pocket tool del catálogo OMO te acerca al minimalismo como forma de vivir.</p>
+        </div>
+        <div class="detail-desc-card detail-desc-full">
+          <p data-i18n="desc.three">OMONI convierte el dinero en una energía visible y comprensible, ayudando a tomar decisiones desde la presencia, no desde la ansiedad.</p>
+        </div>
+      </div>
+
+      <div class="detail-video-section">
+        <h2 class="video-title" data-i18n="video.title">Mira OMONI en acción</h2>
+        <div class="video-container">
+          <video controls controlsList="nodownload" preload="metadata">
+            <source src="/clips/omoni.MP4" type="video/mp4" />
+            <span data-i18n="video.unsupported">Tu navegador no soporta la etiqueta de vídeo.</span>
+          </video>
+        </div>
+      </div>
+
+      <div class="detail-features-section">
+        <h3 class="features-title" data-i18n="features.title">Funciones clave</h3>
+        <div class="detail-features-grid">
+          <span class="detail-feature-chip" data-i18n="feature.inventory">Inventario de recursos</span>
+          <span class="detail-feature-chip" data-i18n="feature.expenses">Seguimiento de gastos</span>
+          <span class="detail-feature-chip" data-i18n="feature.habits">Hábitos financieros saludables</span>
+          <span class="detail-feature-chip" data-i18n="feature.minimal">Enfoque minimalista</span>
+          <span class="detail-feature-chip" data-i18n="feature.awareness">Consciencia financiera</span>
+          <span class="detail-feature-chip" data-i18n="feature.budget">Gestión del presupuesto</span>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <Footer isInner={true} />
+</BaseLayout>

@@ -1,17 +1,199 @@
 ---
-
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
 ---
+<BaseLayout title="OMO — Pocket Tools para una vida más consciente" page="home">
+  <Navbar />
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+  <main class="container">
+
+    <!-- Hero -->
+    <section class="omo-hero">
+      <div class="hero-content">
+        <h1 class="hero-title" data-i18n-html="hero.title">Pocket Tools<br />para una vida más consciente</h1>
+        <p class="hero-sub" data-i18n="hero.sub">Un ecosistema de micro-apps diseñadas para acompañarte en la vida diaria. Sin ruido ni distracciones. On My Own.</p>
+        <a href="#ecosystem" class="hero-cta" data-i18n="hero.cta">Explorar OMO</a>
+      </div>
+      <div class="hero-visual">
+        <img src="/assets/omo-logo.png" alt="OMO" class="hero-logo" />
+      </div>
+    </section>
+
+    <!-- Philosophy -->
+    <section id="ecosystem" class="philosophy-section">
+      <div class="philosophy-inner">
+        <p class="section-eyebrow" data-i18n="ecosystem.eyebrow">El ecosistema OMO</p>
+        <h2 class="section-heading" data-i18n-html="ecosystem.heading">uxOS — la forma más natural<br />de interactuar con la tecnología</h2>
+        <p class="section-sub" data-i18n="ecosystem.sub">Interfaces limpias, funciones esenciales, cero ruido. Autonomía sin fricción.</p>
+        <div class="philosophy-pillars">
+          <div class="pillar">
+            <div class="pillar-icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="9" width="24" height="2.5" rx="1.25" fill="#1a1a1a"/>
+                <rect x="8" y="15" width="16" height="2.5" rx="1.25" fill="#1a1a1a"/>
+                <rect x="12" y="21" width="8" height="2.5" rx="1.25" fill="#1a1a1a"/>
+              </svg>
+            </div>
+            <span class="pillar-title" data-i18n="pillar.min.title">Minimalismo</span>
+            <span class="pillar-desc" data-i18n="pillar.min.desc">Sin ruido, sin distracciones</span>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 4L7 8v7c0 5.8 3.9 10.7 9 12 5.1-1.3 9-6.2 9-12V8L16 4z" stroke="#1a1a1a" stroke-width="2.2" stroke-linejoin="round"/>
+                <circle cx="16" cy="15" r="2.5" fill="#1a1a1a"/>
+                <line x1="16" y1="17.5" x2="16" y2="21" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <span class="pillar-title" data-i18n="pillar.priv.title">Privacidad</span>
+            <span class="pillar-desc" data-i18n="pillar.priv.desc">Sin tracking. Tus datos, con claridad.</span>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="16" r="11" stroke="#1a1a1a" stroke-width="2.2"/>
+                <circle cx="16" cy="16" r="4" fill="#1a1a1a"/>
+              </svg>
+            </div>
+            <span class="pillar-title" data-i18n="pillar.pres.title">Presencia</span>
+            <span class="pillar-desc" data-i18n="pillar.pres.desc">Tecnología que te devuelve al momento</span>
+          </div>
+        </div>
+        <a href="https://coff.ee/omopockettool" target="_blank" rel="noopener" class="omo-support-button" data-i18n="support.cta">
+          Apoya el proyecto
+        </a>
+      </div>
+    </section>
+
+    <!-- Catalog -->
+    <section id="catalog" class="catalog-section">
+      <div class="catalog-inner">
+        <p class="section-eyebrow" data-i18n="catalog.eyebrow">Pocket Tools</p>
+        <h2 class="section-heading" data-i18n="catalog.heading">Las herramientas del ecosistema</h2>
+        <p class="section-sub" data-i18n="catalog.sub">Micro-apps diseñadas para acompañarte en la vida diaria. Sin ruido ni distracciones.</p>
+        <div class="catalog-grid">
+
+          <div class="catalog-card">
+            <div class="catalog-card-header">
+              <img src="/assets/OMO_NI.jpg" alt="OMONI" class="catalog-card-icon" />
+              <div class="catalog-card-meta">
+                <h3 class="catalog-card-name">OMONI</h3>
+                <span class="pocket-tool-label" data-i18n="omoni.label">Pocket Tool Nº 1</span>
+              </div>
+              <span class="status-badge in-progress">
+                <span data-i18n="status.progress">En progreso</span>
+                <span class="led-indicator"></span>
+              </span>
+            </div>
+            <p class="catalog-card-desc" data-i18n="omoni.desc">Consciencia financiera en tu bolsillo. ¿Cuánto te cuesta vivir hoy?</p>
+            <div class="catalog-card-chips">
+              <span class="feature-chip" data-i18n="chip.inventory">Inventario</span>
+              <span class="feature-chip" data-i18n="chip.expenses">Gastos</span>
+              <span class="feature-chip" data-i18n="chip.habits">Hábitos</span>
+            </div>
+            <a href="/omoni" class="learn-more-button">
+              <span data-i18n="learn.more">Conocer más</span> <span class="arrow-icon">→</span>
+            </a>
+          </div>
+
+          <div class="catalog-card coming-soon">
+            <div class="catalog-card-header">
+              <div class="catalog-card-monogram">OB</div>
+              <div class="catalog-card-meta">
+                <h3 class="catalog-card-name">OMOBREATH</h3>
+                <span class="pocket-tool-label" data-i18n="ob.label">Pocket Tool Nº 2</span>
+              </div>
+              <span class="status-badge coming" data-i18n="status.coming">Próximamente</span>
+            </div>
+            <p class="catalog-card-desc" data-i18n="ob.desc">Respiración consciente. Pausas que cambian el estado.</p>
+            <div class="catalog-card-chips">
+              <span class="feature-chip" data-i18n="chip.breath">Respiración</span>
+              <span class="feature-chip" data-i18n="chip.calm">Calma</span>
+            </div>
+          </div>
+
+          <div class="catalog-card coming-soon">
+            <div class="catalog-card-header">
+              <div class="catalog-card-monogram">OH</div>
+              <div class="catalog-card-meta">
+                <h3 class="catalog-card-name">OMOHABITS</h3>
+                <span class="pocket-tool-label" data-i18n="oh.label">Pocket Tool Nº 3</span>
+              </div>
+              <span class="status-badge coming" data-i18n="status.coming">Próximamente</span>
+            </div>
+            <p class="catalog-card-desc" data-i18n="oh.desc">Hábitos sin presión. Pequeños gestos, grandes cambios.</p>
+            <div class="catalog-card-chips">
+              <span class="feature-chip" data-i18n="chip.habits">Hábitos</span>
+              <span class="feature-chip" data-i18n="chip.progress">Progreso</span>
+            </div>
+          </div>
+
+          <div class="catalog-card coming-soon">
+            <div class="catalog-card-header">
+              <div class="catalog-card-monogram">OD</div>
+              <div class="catalog-card-meta">
+                <h3 class="catalog-card-name">OMODIARY</h3>
+                <span class="pocket-tool-label" data-i18n="od.label">Pocket Tool Nº 4</span>
+              </div>
+              <span class="status-badge coming" data-i18n="status.coming">Próximamente</span>
+            </div>
+            <p class="catalog-card-desc" data-i18n="od.desc">Diario de consciencia. Tu espacio más íntimo y privado.</p>
+            <div class="catalog-card-chips">
+              <span class="feature-chip" data-i18n="chip.diary">Diario</span>
+              <span class="feature-chip" data-i18n="chip.privacy">Privacidad</span>
+            </div>
+          </div>
+
+          <div class="catalog-card coming-soon">
+            <div class="catalog-card-header">
+              <div class="catalog-card-monogram">OS</div>
+              <div class="catalog-card-meta">
+                <h3 class="catalog-card-name">OMOSILENCE</h3>
+                <span class="pocket-tool-label" data-i18n="os.label">Pocket Tool Nº 5</span>
+              </div>
+              <span class="status-badge coming" data-i18n="status.coming">Próximamente</span>
+            </div>
+            <p class="catalog-card-desc" data-i18n="os.desc">Espacios de calma. El antídoto al ruido digital.</p>
+            <div class="catalog-card-chips">
+              <span class="feature-chip" data-i18n="chip.silence">Silencio</span>
+              <span class="feature-chip" data-i18n="chip.focus">Foco</span>
+            </div>
+          </div>
+
+          <div class="catalog-card coming-soon">
+            <div class="catalog-card-header">
+              <div class="catalog-card-monogram">OSc</div>
+              <div class="catalog-card-meta">
+                <h3 class="catalog-card-name">OMOSOCIAL</h3>
+                <span class="pocket-tool-label" data-i18n="osc.label">Pocket Tool Nº 6</span>
+              </div>
+              <span class="status-badge coming" data-i18n="status.coming">Próximamente</span>
+            </div>
+            <p class="catalog-card-desc" data-i18n="osc.desc">Red social sin likes. Conexión real, sin métricas de validación.</p>
+            <div class="catalog-card-chips">
+              <span class="feature-chip" data-i18n="chip.social">Social</span>
+              <span class="feature-chip" data-i18n="chip.minimal">Minimal</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Historia Strip -->
+    <section class="historia-strip">
+      <div class="historia-strip-inner">
+        <p class="section-eyebrow" data-i18n="story.eyebrow">Quién está detrás</p>
+        <h3 class="historia-strip-heading" data-i18n="story.heading">El origen de OMO</h3>
+        <p class="historia-strip-excerpt" data-i18n="story.excerpt">De un cuarto con una computadora vieja a un Mac comprado con dinero de jardín. La historia de por qué OMO existe.</p>
+        <a href="/historia" class="learn-more-button">
+          <span data-i18n="story.cta">Leer mi historia</span> <span class="arrow-icon">→</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <Footer />
+</BaseLayout>
