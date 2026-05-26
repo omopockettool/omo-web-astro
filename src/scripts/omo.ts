@@ -32,6 +32,7 @@ function bindControls() {
 
 function applyTheme(theme: string) {
   const t = theme === 'dark' ? 'dark' : 'light';
+  document.documentElement.classList.add('theme-switching');
   document.documentElement.dataset.theme = t;
   localStorage.setItem('omo-theme', t);
 
@@ -41,6 +42,11 @@ function applyTheme(theme: string) {
     const icon = el.querySelector('.theme-toggle-icon');
     if (icon) icon.textContent = t === 'dark' ? '☀' : '☾';
   });
+
+  window.clearTimeout((window as typeof window & { __omoThemeTimer?: number }).__omoThemeTimer);
+  (window as typeof window & { __omoThemeTimer?: number }).__omoThemeTimer = window.setTimeout(() => {
+    document.documentElement.classList.remove('theme-switching');
+  }, 320);
 }
 
 function applyLanguage(language: string) {

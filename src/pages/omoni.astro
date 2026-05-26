@@ -10,10 +10,10 @@ import Footer from '../components/Footer.astro';
     <section class="omoni-detail-card">
 
       <div class="detail-header">
-        <img src="/assets/OMO_NI.jpg" alt="OMO-NI" class="detail-icon" />
+        <div class="detail-icon detail-icon--app" style="background-image: url('/assets/pocket-tools/omoni.png')"></div>
         <div class="detail-header-content">
           <div class="detail-title-row">
-            <h1 class="detail-title">OMO-NI</h1>
+            <h1 class="detail-title">OMONI</h1>
             <span class="status-badge in-progress">
               <span data-i18n="status.progress">En progreso</span>
               <span class="led-indicator"></span>
@@ -38,11 +38,71 @@ import Footer from '../components/Footer.astro';
         </div>
       </div>
 
+      <div class="detail-flow-section">
+        <h3 class="flow-title" data-i18n="flow.title">Cómo funciona</h3>
+        <div class="flow-steps">
+
+          <div class="flow-step">
+            <span class="flow-step-num">1</span>
+            <div class="flow-step-content">
+              <h4 class="flow-step-heading" data-i18n="flow.step1.title">Crea tu perfil</h4>
+              <p class="flow-step-desc" data-i18n="flow.step1.desc">Al abrir OMONI por primera vez introduces un nombre de usuario. La app genera automáticamente un grupo llamado <strong>Personal</strong> con categorías que el equipo OMO ha pensado para ti. Todo es editable: renombra, elimina o crea las tuyas. Puedes tener tantos grupos como necesites, por ejemplo Casa, Trabajo o Viaje.</p>
+            </div>
+          </div>
+
+          <div class="flow-step">
+            <span class="flow-step-num">2</span>
+            <div class="flow-step-content">
+              <h4 class="flow-step-heading" data-i18n="flow.step2.title">El dashboard es tu punto de partida</h4>
+              <p class="flow-step-desc" data-i18n="flow.step2.desc">Desde aquí ves de un vistazo cuánto has gastado hoy y este mes. Tienes acceso a tus grupos, listas y el botón <strong>+</strong> para añadir un gasto en segundos, sin fricciones.</p>
+            </div>
+          </div>
+
+          <div class="flow-step">
+            <span class="flow-step-num">3</span>
+            <div class="flow-step-content">
+              <h4 class="flow-step-heading" data-i18n="flow.step3.title">Añade un gasto</h4>
+              <p class="flow-step-desc" data-i18n="flow.step3.desc">Lo único imprescindible es seleccionar una categoría. OMONI crea la lista con el nombre de esa categoría y sin items si no añadiste nada más. El nombre y el importe son opcionales: si los rellenas, se genera automáticamente un item dentro de la lista con ese nombre y ese valor.</p>
+              <div class="flow-example">
+                <span class="flow-example-label" data-i18n="flow.example.label">Ejemplo</span>
+                <p class="flow-example-text" data-i18n="flow.step3.example">Seleccionas <em>Ocio</em> sin escribir nada → se crea la lista <em>Ocio</em> vacía. Si además escribes <em>Luz Iberdrola</em> y <em>100€</em> → la lista se llama <em>Luz Iberdrola</em> y tiene un item de 100€ dentro.</p>
+              </div>
+              <p class="flow-step-note" data-i18n="flow.step3.note">Este mismo sistema te permite construir listas de la compra: añade varios items bajo la misma lista y lleva el control en un solo lugar.</p>
+            </div>
+          </div>
+
+          <div class="flow-step">
+            <span class="flow-step-num">4</span>
+            <div class="flow-step-content">
+              <h4 class="flow-step-heading" data-i18n="flow.step4.title">Marca lo que ya pagaste</h4>
+              <p class="flow-step-desc" data-i18n="flow.step4.desc">Cada item tiene un estado pagado o pendiente. Puedes marcarlos uno a uno o todos de golpe. El dashboard refleja en tiempo real cuánto queda por pagar.</p>
+            </div>
+          </div>
+
+          <div class="flow-step">
+            <span class="flow-step-num">5</span>
+            <div class="flow-step-content">
+              <h4 class="flow-step-heading" data-i18n="flow.step5.title">Métodos de pago</h4>
+              <p class="flow-step-desc" data-i18n="flow.step5.desc">OMONI incluye métodos de pago por defecto que puedes personalizar: renombra, añade o elimina según cómo gestionas tu dinero.</p>
+            </div>
+          </div>
+
+          <div class="flow-step">
+            <span class="flow-step-num">6</span>
+            <div class="flow-step-content">
+              <h4 class="flow-step-heading" data-i18n="flow.step6.title">Tus datos, tu nube</h4>
+              <p class="flow-step-desc" data-i18n="flow.step6.desc">Puedes exportar todos tus datos como copia de seguridad e importarlos cuando quieras. Súbelo a iCloud, Google Drive o donde prefieras. Tus datos son tuyos.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
       <div class="detail-video-section">
         <h2 class="video-title" data-i18n="video.title">Mira OMONI en acción</h2>
         <div class="video-container">
           <video controls controlsList="nodownload" preload="metadata">
-            <source src="/clips/omoni.MP4" type="video/mp4" />
+            <source src="/clips/omoni-en-accion.mov" type="video/mp4" />
             <span data-i18n="video.unsupported">Tu navegador no soporta la etiqueta de vídeo.</span>
           </video>
         </div>

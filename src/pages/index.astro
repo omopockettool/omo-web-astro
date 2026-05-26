@@ -74,107 +74,38 @@ import Footer from '../components/Footer.astro';
         <p class="section-sub" data-i18n="catalog.sub">Micro-apps diseñadas para acompañarte en la vida diaria. Sin ruido ni distracciones.</p>
         <div class="catalog-grid">
 
-          <div class="catalog-card">
-            <div class="catalog-card-header">
-              <img src="/assets/OMO_NI.jpg" alt="OMONI" class="catalog-card-icon" />
-              <div class="catalog-card-meta">
-                <h3 class="catalog-card-name">OMONI</h3>
-                <span class="pocket-tool-label" data-i18n="omoni.label">Pocket Tool Nº 1</span>
-              </div>
+          <a href="/omoni" class="catalog-card catalog-card--link">
+            <div class="catalog-card-top">
+              <div class="catalog-card-icon catalog-card-icon--app" style="background-image: url('/assets/pocket-tools/omoni.png')"></div>
               <span class="status-badge in-progress">
                 <span data-i18n="status.progress">En progreso</span>
                 <span class="led-indicator"></span>
               </span>
             </div>
+            <div class="catalog-card-identity">
+              <h3 class="catalog-card-name">OMONI</h3>
+              <span class="pocket-tool-label" data-i18n="omoni.label">Pocket Tool Nº 1</span>
+            </div>
             <p class="catalog-card-desc" data-i18n="omoni.desc">Consciencia financiera en tu bolsillo. ¿Cuánto te cuesta vivir hoy?</p>
-            <div class="catalog-card-chips">
-              <span class="feature-chip" data-i18n="chip.inventory">Inventario</span>
-              <span class="feature-chip" data-i18n="chip.expenses">Gastos</span>
-              <span class="feature-chip" data-i18n="chip.habits">Hábitos</span>
-            </div>
-            <a href="/omoni" class="learn-more-button">
-              <span data-i18n="learn.more">Conocer más</span> <span class="arrow-icon">→</span>
-            </a>
-          </div>
-
-          <div class="catalog-card coming-soon">
-            <div class="catalog-card-header">
-              <div class="catalog-card-monogram">OB</div>
-              <div class="catalog-card-meta">
-                <h3 class="catalog-card-name">OMOBREATH</h3>
-                <span class="pocket-tool-label" data-i18n="ob.label">Pocket Tool Nº 2</span>
+            <div class="catalog-card-meta">
+              <div class="catalog-card-chips">
+                <span class="feature-chip" data-i18n="chip.inventory">Inventario</span>
+                <span class="feature-chip" data-i18n="chip.expenses">Gastos</span>
+                <span class="feature-chip" data-i18n="chip.habits">Hábitos</span>
               </div>
-              <span class="status-badge coming" data-i18n="status.coming">Próximamente</span>
+              <span class="catalog-card-arrow" aria-hidden="true">→</span>
             </div>
-            <p class="catalog-card-desc" data-i18n="ob.desc">Respiración consciente. Pausas que cambian el estado.</p>
-            <div class="catalog-card-chips">
-              <span class="feature-chip" data-i18n="chip.breath">Respiración</span>
-              <span class="feature-chip" data-i18n="chip.calm">Calma</span>
-            </div>
-          </div>
+          </a>
 
-          <div class="catalog-card coming-soon">
-            <div class="catalog-card-header">
-              <div class="catalog-card-monogram">OH</div>
-              <div class="catalog-card-meta">
-                <h3 class="catalog-card-name">OMOHABITS</h3>
-                <span class="pocket-tool-label" data-i18n="oh.label">Pocket Tool Nº 3</span>
-              </div>
-              <span class="status-badge coming" data-i18n="status.coming">Próximamente</span>
+          <div class="catalog-coming-soon-placeholder">
+            <div class="coming-soon-lines">
+              <div class="coming-soon-line"></div>
+              <div class="coming-soon-line coming-soon-line--short"></div>
+              <div class="coming-soon-line"></div>
+              <div class="coming-soon-line coming-soon-line--short"></div>
+              <div class="coming-soon-line"></div>
             </div>
-            <p class="catalog-card-desc" data-i18n="oh.desc">Hábitos sin presión. Pequeños gestos, grandes cambios.</p>
-            <div class="catalog-card-chips">
-              <span class="feature-chip" data-i18n="chip.habits">Hábitos</span>
-              <span class="feature-chip" data-i18n="chip.progress">Progreso</span>
-            </div>
-          </div>
-
-          <div class="catalog-card coming-soon">
-            <div class="catalog-card-header">
-              <div class="catalog-card-monogram">OD</div>
-              <div class="catalog-card-meta">
-                <h3 class="catalog-card-name">OMODIARY</h3>
-                <span class="pocket-tool-label" data-i18n="od.label">Pocket Tool Nº 4</span>
-              </div>
-              <span class="status-badge coming" data-i18n="status.coming">Próximamente</span>
-            </div>
-            <p class="catalog-card-desc" data-i18n="od.desc">Diario de consciencia. Tu espacio más íntimo y privado.</p>
-            <div class="catalog-card-chips">
-              <span class="feature-chip" data-i18n="chip.diary">Diario</span>
-              <span class="feature-chip" data-i18n="chip.privacy">Privacidad</span>
-            </div>
-          </div>
-
-          <div class="catalog-card coming-soon">
-            <div class="catalog-card-header">
-              <div class="catalog-card-monogram">OS</div>
-              <div class="catalog-card-meta">
-                <h3 class="catalog-card-name">OMOSILENCE</h3>
-                <span class="pocket-tool-label" data-i18n="os.label">Pocket Tool Nº 5</span>
-              </div>
-              <span class="status-badge coming" data-i18n="status.coming">Próximamente</span>
-            </div>
-            <p class="catalog-card-desc" data-i18n="os.desc">Espacios de calma. El antídoto al ruido digital.</p>
-            <div class="catalog-card-chips">
-              <span class="feature-chip" data-i18n="chip.silence">Silencio</span>
-              <span class="feature-chip" data-i18n="chip.focus">Foco</span>
-            </div>
-          </div>
-
-          <div class="catalog-card coming-soon">
-            <div class="catalog-card-header">
-              <div class="catalog-card-monogram">OSc</div>
-              <div class="catalog-card-meta">
-                <h3 class="catalog-card-name">OMOSOCIAL</h3>
-                <span class="pocket-tool-label" data-i18n="osc.label">Pocket Tool Nº 6</span>
-              </div>
-              <span class="status-badge coming" data-i18n="status.coming">Próximamente</span>
-            </div>
-            <p class="catalog-card-desc" data-i18n="osc.desc">Red social sin likes. Conexión real, sin métricas de validación.</p>
-            <div class="catalog-card-chips">
-              <span class="feature-chip" data-i18n="chip.social">Social</span>
-              <span class="feature-chip" data-i18n="chip.minimal">Minimal</span>
-            </div>
+            <p class="coming-soon-label" data-i18n="catalog.comingSoon">Más pocket tools en camino</p>
           </div>
 
         </div>
