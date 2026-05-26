@@ -74,16 +74,16 @@ import Footer from '../components/Footer.astro';
         <p class="section-sub" data-i18n="catalog.sub">Micro-apps diseñadas para acompañarte en la vida diaria. Sin ruido ni distracciones.</p>
         <div class="catalog-grid">
 
-          <a href="/omoni" class="catalog-card catalog-card--link">
+          <a href="/omoni" class="catalog-card catalog-card--link" data-omoni-catalog-link>
             <div class="catalog-card-top">
-              <div class="catalog-card-icon catalog-card-icon--app" style="background-image: url('/assets/pocket-tools/omoni.png')"></div>
+              <div transition:name="omoni-icon" class="catalog-card-icon catalog-card-icon--app" style="background-image: url('/assets/pocket-tools/omoni.png')"></div>
               <span class="status-badge in-progress">
                 <span data-i18n="status.progress">En progreso</span>
                 <span class="led-indicator"></span>
               </span>
             </div>
             <div class="catalog-card-identity">
-              <h3 class="catalog-card-name">OMONI</h3>
+              <h3 transition:name="omoni-title" class="catalog-card-name">OMONI</h3>
               <span class="pocket-tool-label" data-i18n="omoni.label">Pocket Tool Nº 1</span>
             </div>
             <p class="catalog-card-desc" data-i18n="omoni.desc">Consciencia financiera en tu bolsillo. ¿Cuánto te cuesta vivir hoy?</p>

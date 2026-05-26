@@ -308,42 +308,4 @@ import Footer from '../components/Footer.astro';
       <p id="omo-lightbox-caption" class="omo-lightbox-caption"></p>
     </div>
   </div>
-
-  <script is:inline>
-    const nodes = document.querySelectorAll('.timeline-node');
-    if (nodes.length > 0 && 'IntersectionObserver' in window) {
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('timeline-node--visible'); });
-      }, { threshold: 0.1 });
-      nodes.forEach(n => observer.observe(n));
-    } else {
-      nodes.forEach(n => n.classList.add('timeline-node--visible'));
-    }
-
-    const lightbox = document.getElementById('omo-lightbox');
-    const lbImg = document.getElementById('omo-lightbox-img');
-    const lbCaption = document.getElementById('omo-lightbox-caption');
-
-    document.querySelectorAll('.timeline-thumb-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const theme = document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light';
-        lbImg.src = theme === 'dark'
-          ? (btn.dataset.lightboxSrcDark || btn.dataset.lightboxSrc || '')
-          : (btn.dataset.lightboxSrcLight || btn.dataset.lightboxSrc || '');
-        lbImg.alt = btn.dataset.lightboxCaption;
-        lbCaption.textContent = btn.dataset.lightboxCaption;
-        lightbox.setAttribute('aria-hidden', 'false');
-        lightbox.classList.add('omo-lightbox--open');
-      });
-    });
-
-    function closeLightbox() {
-      lightbox.classList.remove('omo-lightbox--open');
-      lightbox.setAttribute('aria-hidden', 'true');
-    }
-
-    lightbox.querySelector('.omo-lightbox-close').addEventListener('click', closeLightbox);
-    lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
-    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
-  </script>
 </BaseLayout>

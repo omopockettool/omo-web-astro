@@ -4,16 +4,16 @@ import NavbarBack from '../components/NavbarBack.astro';
 import Footer from '../components/Footer.astro';
 ---
 <BaseLayout title="OMONI — Pocket Tool de dinero" page="omoni-detail">
-  <NavbarBack backLabel="Volver al catálogo" backHref="/" />
+  <NavbarBack backLabel="Volver al catálogo" backHref="/#catalog" />
 
   <main class="detail-container">
     <section class="omoni-detail-card">
 
       <div class="detail-header">
-        <div class="detail-icon detail-icon--app" style="background-image: url('/assets/pocket-tools/omoni.png')"></div>
+        <div transition:name="omoni-icon" class="detail-icon detail-icon--app" style="background-image: url('/assets/pocket-tools/omoni.png')"></div>
         <div class="detail-header-content">
           <div class="detail-title-row">
-            <h1 class="detail-title">OMONI</h1>
+            <h1 transition:name="omoni-title" class="detail-title">OMONI</h1>
             <span class="status-badge in-progress">
               <span data-i18n="status.progress">En progreso</span>
               <span class="led-indicator"></span>

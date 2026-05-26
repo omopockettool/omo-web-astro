@@ -14,6 +14,8 @@ Refinamiento visual y estructural del sitio de OMO, con foco en branding, catál
 
 - **Icono correcto en landing y detalle** — OMONI ahora usa `public/assets/pocket-tools/omoni.png`
 - **Catálogo tappable** — la card completa de OMONI en home es navegable; se elimina el botón `Conocer más` y se sustituye por una flecha integrada
+- **Transición nativa entre home y detalle** — navegación refinada con transiciones de Astro entre la card del catálogo y la ficha de OMONI
+- **Vuelta coherente al catálogo** — el botón `Volver al catálogo` en la ficha de OMONI ahora apunta directamente a `/#catalog`
 - **Cabecera refinada** — tamaños responsive ajustados para logo, icono, badge de App Store y navbar en móvil
 - **How it works** — añadida la sección completa de flujo de uso de OMONI
 - **Vídeo actualizado** — nuevo clip `public/clips/omoni-en-accion.mov`
@@ -23,6 +25,7 @@ Refinamiento visual y estructural del sitio de OMO, con foco en branding, catál
 
 - **Assets reorganizados** — imágenes de la timeline movidas a `public/assets/historia/`
 - **Rutas reparadas** — todas las referencias de `historia.astro` actualizadas al nuevo directorio
+- **Timeline estabilizada con Astro transitions** — la aparición de los containers y el lightbox de `Mi Historia` ahora se reinicializan correctamente al navegar entre páginas
 - **Nuevas imágenes clave** — `On My Own`, `Dennis 2023` y `OMO` sustituyen placeholders o versiones anteriores
 - **OMO por tema** — la imagen final de OMO cambia entre negro y blanco según el tema activo
 - **Etiquetas Fig. unificadas** — captions de imágenes normalizados con formato `Fig. 0X`
