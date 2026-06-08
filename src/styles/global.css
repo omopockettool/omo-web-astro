@@ -50,6 +50,8 @@
   --color-control-bg-active: #1a1a1a;
   --color-control-text-active: #ffffff;
   --color-shadow-soft: rgba(0, 0, 0, 0.07);
+  --color-omo-green: #27c26a;
+  --color-grid-idle: #dfe4e7;
 }
 
 :root[data-theme="dark"] {
@@ -72,6 +74,8 @@
   --color-control-bg-active: #f3f5f6;
   --color-control-text-active: #0f1113;
   --color-shadow-soft: rgba(0, 0, 0, 0.28);
+  --color-omo-green: #33d17a;
+  --color-grid-idle: #2b3239;
 }
 
 /* ===================================
@@ -568,31 +572,45 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 28px;
+  min-height: 100%;
 }
 
-.coming-soon-lines {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  width: 100%;
+.coming-soon-matrix {
+  --matrix-gap: clamp(6px, 1vw, 10px);
+  width: min(100%, 430px);
+  aspect-ratio: 21 / 7;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(21, minmax(0, 1fr));
+  grid-template-rows: repeat(7, minmax(0, 1fr));
+  gap: var(--matrix-gap);
+  padding: 0;
 }
 
-.coming-soon-line {
-  height: 10px;
-  border-radius: 99px;
-  background: repeating-linear-gradient(
-    90deg,
-    var(--color-border) 0px,
-    var(--color-border) 12px,
-    transparent 12px,
-    transparent 20px
-  );
-  opacity: 0.5;
+.matrix-cell {
+  grid-column: var(--col);
+  grid-row: var(--row);
+  border-radius: 8px;
+  background: var(--color-grid-idle);
+  opacity: 0.7;
 }
 
-.coming-soon-line--short {
-  width: 55%;
+.coming-soon-omo {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(21, minmax(0, 1fr));
+  grid-template-rows: repeat(7, minmax(0, 1fr));
+  gap: var(--matrix-gap);
+  pointer-events: none;
+}
+
+.matrix-cell--active {
+  background: var(--color-grid-idle);
+  opacity: 0.7;
+  animation: omoCharge 4.8s ease-in-out infinite;
+  animation-delay: calc((var(--col) - 4) * 120ms);
 }
 
 .coming-soon-label {
@@ -603,6 +621,36 @@ body {
   font-weight: 500;
   text-align: center;
   margin: 0;
+}
+
+@keyframes omoCharge {
+  0%,
+  18%,
+  100% {
+    background: var(--color-grid-idle);
+    opacity: 0.7;
+    box-shadow: none;
+    transform: scale(1);
+  }
+  28% {
+    background: rgba(39, 194, 106, 0.45);
+    opacity: 0.98;
+    box-shadow: 0 0 0 1px rgba(39, 194, 106, 0.12);
+    transform: scale(1.02);
+  }
+  40%,
+  54% {
+    background: var(--color-omo-green);
+    opacity: 1;
+    box-shadow: 0 0 14px rgba(39, 194, 106, 0.24);
+    transform: scale(1.05);
+  }
+  68% {
+    background: rgba(39, 194, 106, 0.38);
+    opacity: 0.94;
+    box-shadow: none;
+    transform: scale(1.01);
+  }
 }
 
 /* ===================================
@@ -1319,6 +1367,7 @@ body {
 @media (max-width: 900px) {
   .catalog-grid { grid-template-columns: 1fr; }
   .catalog-coming-soon-placeholder { padding: 40px 32px; min-height: 220px; }
+  .coming-soon-matrix { width: min(100%, 400px); }
   .philosophy-pillars { gap: 32px; }
 }
 
@@ -1385,6 +1434,8 @@ body {
   .catalog-section { padding: 48px 20px; }
   .catalog-card { padding: 36px 32px 40px; gap: 24px; }
   .catalog-card-name { font-size: 1.35rem; }
+  .catalog-coming-soon-placeholder { gap: 26px; }
+  .coming-soon-matrix { --matrix-gap: 6px; }
   .historia-strip { padding: 56px 20px; }
   .status-badge { font-size: 0.62rem; padding: 3px 9px; }
   .led-indicator { width: 6px; height: 6px; }
@@ -1428,6 +1479,9 @@ body {
   .catalog-card-chips { gap: 8px; }
   .feature-chip { font-size: 0.72rem; padding: 0.28em 0.7em; }
   .status-badge { font-size: 0.58rem; padding: 3px 8px; }
+  .catalog-coming-soon-placeholder { padding: 28px 24px 32px; }
+  .coming-soon-matrix { --matrix-gap: 5px; }
+  .matrix-cell { border-radius: 8px; }
 
   /* Philosophy */
   .philosophy-section { padding: 50px 0.75rem; }
@@ -1458,4 +1512,12 @@ body {
   .timeline-marker { width: 36px; height: 36px; font-size: 0.75rem; }
   .timeline-connector { margin-left: 18px; }
   .timeline-content-card { padding: 1.25rem 0.85rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .matrix-cell--active {
+    animation: none;
+    background: var(--color-grid-idle);
+    opacity: 0.7;
+  }
 }

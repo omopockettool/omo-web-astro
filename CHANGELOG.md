@@ -1,5 +1,16 @@
 # Changelog — omo-web-astro
 
+## [1.3.0] — 2026-06-08
+
+Refinamiento visual de la card `Más pocket tools en camino` en home para transmitir mejor calma, anticipación y continuidad del ecosistema OMO.
+
+### Home
+
+- **Placeholder animado del catálogo** — la segunda card del catálogo ahora usa una matriz completa de cuadrados grises con la silueta `OMO` integrada
+- **Barrido suave en loop** — la forma `OMO` se activa en verde con un barrido horizontal continuo y luego vuelve a gris para mantener una sensación más limpia
+- **Más aire en la composición** — se amplió la grilla con espacio extra arriba y abajo para que la animación respire mejor dentro del contenedor
+- **Markup más mantenible** — la matriz se genera desde `index.astro` a partir de coordenadas, en lugar de escribir manualmente cada cuadrado en el HTML
+
 ## [1.2.0] — 2026-05-27
 
 Ajuste de navegación y transición entre catálogo, detalle de OMONI y página de historia.
