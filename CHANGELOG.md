@@ -1,5 +1,24 @@
 # Changelog — omo-web-astro
 
+## [1.6.0] — 2026-07-04
+
+Refuerzo legal de Privacidad y Términos para cubrir vacíos de RGPD y buenas prácticas ante Apple/App Store.
+
+### Privacidad
+
+- **Responsable del tratamiento identificado** — nueva línea en la cabecera con nombre y contacto
+- **Nueva sección "Menores de edad"** — OMO/OMONI no dirigidos a menores de 16 años
+- **Derechos ampliados** — se añaden portabilidad, oposición y limitación, además del derecho a reclamar ante la AEPD (u autoridad de control equivalente en la UE)
+- **Compartición con terceros** — se menciona explícitamente el proveedor de hosting del sitio
+- Renumeración de secciones (5 a 9) para acomodar los cambios
+
+### Términos
+
+- **Nueva sección "Edad mínima"** — 16 años como requisito de uso
+- **Nueva sección "Terminación"** — condiciones para dejar de usar el servicio o perder el acceso
+- **Nueva sección "Ley aplicable y jurisdicción"** — legislación española como marco legal
+- Renumeración de secciones (2 a 12) para acomodar los cambios
+
 ## [1.5.0] — 2026-07-04
 
 Nueva página pública de Soporte, requerida para completar la ficha de OMONI en App Store Connect (Support URL).
