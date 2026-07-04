@@ -1,5 +1,24 @@
 # Changelog — omo-web-astro
 
+## [1.4.0] — 2026-07-04
+
+Renombre de concepto: `uxOS` reemplazado por `Diseño Centrado en la Vida` / `Life-Centered Design` en todo el sitio, por ser un término más claro y menos técnico que el acrónimo anterior.
+
+### Glosario
+
+- **Entrada renombrada** — `uxOS` pasa a ser `Diseño Centrado en la Vida` (es) / `Life-Centered Design` (en), reordenada alfabéticamente antes de `OMO`
+- **Definición reescrita** — se elimina la expansión de acrónimo `User Experience Operating System`; la definición ahora describe un enfoque de diseño, no un sistema operativo
+- **Cita de uso ajustada** — de `"OMO es el primer ecosistema construido bajo..."` a `"OMO sigue los principios del Diseño Centrado en la Vida"`, para no afirmar ser el primero
+
+### Home e Historia
+
+- **Heading de la sección "El ecosistema OMO"** actualizado en `index.astro`
+- **Timeline 2025** — título, párrafo y chip de `historia.astro` actualizados
+
+### i18n
+
+- **Claves renombradas** — `uxos.*` → `lcd.*` en `translations.ts` (es/en)
+
 ## [1.3.0] — 2026-06-08
 
 Refinamiento visual de la card `Más pocket tools en camino` en home para transmitir mejor calma, anticipación y continuidad del ecosistema OMO.
