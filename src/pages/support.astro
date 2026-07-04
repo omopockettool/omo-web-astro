@@ -1,0 +1,50 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NavbarBack from '../components/NavbarBack.astro';
+import Footer from '../components/Footer.astro';
+---
+<BaseLayout title="Soporte — OMO" page="support">
+  <NavbarBack />
+
+  <main class="legal-container">
+    <header class="legal-header">
+      <p class="legal-page-label" data-i18n="legal.label">Ayuda</p>
+      <h1 class="legal-page-title" data-i18n="legal.title">Soporte</h1>
+      <p class="legal-page-sub" data-i18n="legal.sub">¿Tienes dudas sobre OMONI o cualquier otra Pocket Tool del ecosistema OMO? Aquí encontrarás respuestas rápidas y cómo contactarnos.</p>
+      <div class="legal-meta">
+        <span data-i18n="legal.updated">Última actualización: 4 de julio de 2026</span>
+        <span data-i18n="legal.domain">Sitio oficial: omopockettool.com</span>
+      </div>
+    </header>
+
+    <div class="legal-content">
+      <section class="legal-section">
+        <h2 class="legal-section-title" data-i18n="support.s1.title">1. Preguntas frecuentes</h2>
+        <p><strong data-i18n="support.s1.q1">¿Cómo hago una copia de seguridad de mis datos en OMONI?</strong></p>
+        <p data-i18n="support.s1.a1">Desde Ajustes puedes exportar todos tus datos como copia de seguridad. Guárdala en iCloud, Google Drive o donde prefieras. Puedes importarla de nuevo cuando quieras.</p>
+        <p><strong data-i18n="support.s1.q2">¿Puedo eliminar mis datos por completo?</strong></p>
+        <p data-i18n="support.s1.a2">Sí. Al ser datos locales en tu dispositivo, eliminar la app o los grupos/listas desde dentro de OMONI borra esa información. Si necesitas ayuda para hacerlo, escríbenos.</p>
+        <p><strong data-i18n="support.s1.q3">¿Por qué no encuentro una función que esperaba?</strong></p>
+        <p data-i18n="support.s1.a3">OMONI está en desarrollo activo. Si algo no funciona como esperas o crees que falta una función clave, cuéntanoslo — leemos todos los mensajes.</p>
+        <p><strong data-i18n="support.s1.q4">¿OMONI funciona sin conexión a internet?</strong></p>
+        <p data-i18n="support.s1.a4">Sí. OMONI guarda tus datos localmente en el dispositivo, por lo que puedes usarla sin conexión.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2 class="legal-section-title" data-i18n="support.s2.title">2. Reportar un problema</h2>
+        <p data-i18n="support.s2.p1">Si encuentras un error, un comportamiento inesperado o quieres sugerir una mejora, escríbenos con el mayor detalle posible: qué esperabas que pasara, qué ocurrió y en qué dispositivo.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2 class="legal-section-title" data-i18n="support.s3.title">3. Contacto</h2>
+        <p data-i18n="support.s3.p1">Para cualquier otra duda sobre OMONI, OMO o el resto de Pocket Tools, este es el mejor canal:</p>
+        <div class="legal-contact-card">
+          <p><strong data-i18n="support.s3.contactLabel">Email:</strong> <a href="mailto:omopockettool@gmail.com">omopockettool@gmail.com</a></p>
+          <p class="legal-inline-note" data-i18n="support.s3.note">Respondemos personalmente a cada mensaje. Indica el producto y una breve descripción para ayudarte más rápido.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <Footer isInner={true} />
+</BaseLayout>

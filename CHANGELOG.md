@@ -1,5 +1,15 @@
 # Changelog — omo-web-astro
 
+## [1.5.0] — 2026-07-04
+
+Nueva página pública de Soporte, requerida para completar la ficha de OMONI en App Store Connect (Support URL).
+
+### Support
+
+- **Página `/support`** — FAQ básico (backup/export de datos, eliminar datos, funciones en desarrollo, uso offline), sección para reportar problemas y tarjeta de contacto con email
+- **Footer actualizado** — nuevo link `Soporte` en todas las páginas, distinto del link de Donaciones
+- **i18n** — nuevo namespace `support` (es/en) y clave `footer.help` añadida a todas las páginas
+
 ## [1.4.0] — 2026-07-04
 
 Renombre de concepto: `uxOS` reemplazado por `Diseño Centrado en la Vida` / `Life-Centered Design` en todo el sitio, por ser un término más claro y menos técnico que el acrónimo anterior.
