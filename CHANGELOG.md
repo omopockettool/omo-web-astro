@@ -1,5 +1,18 @@
 # Changelog — omo-web-astro
 
+## [1.6.1] — 2026-07-06
+
+Corrección de la sección "Cómo funciona" de `/omoni`, que describía un flujo desactualizado respecto a la app real (grupos, dashboard, modos de entrada, nombres de pantallas).
+
+### Cómo funciona (`/omoni`)
+
+- **Paso "Dashboard"** — ya no dice que da visión de "tus grupos"; ahora refleja que muestra el gasto de hoy/mes por categorías del grupo activo, con opción de cambiar de grupo
+- **Paso "Añade un gasto"** — reescrito para reflejar los modos reales **Simple** y **Lista**: el importe solo existe como campo único en modo Simple (en modo Lista se añade por artículo), orden de los ejemplos corregido (importe antes que nombre, igual que en el formulario real) y categorías de ejemplo ajustadas a las que la app crea por defecto (`Hogar`, `Alimentación`)
+- **"Métodos de pago" → "Orígenes de pago"** — renombrado para coincidir con el término usado en la app
+- **Pasos fusionados** — "Marca lo pagado", "Orígenes de pago" y "Tus datos, tu nube" se combinan en un único paso final, reduciendo la sección de 6 a 4 pasos
+- **Sección colapsable** — "Cómo funciona" ahora es un desplegable (`<details>`) cerrado por defecto; el vídeo "Mira OMONI en acción" se muestra primero
+- Cambios aplicados en `es`/`en` (`translations.ts`) y en el contenido estático del `.astro`
+
 ## [1.6.0] — 2026-07-04
 
 Refuerzo legal de Privacidad y Términos para cubrir vacíos de RGPD y buenas prácticas ante Apple/App Store.

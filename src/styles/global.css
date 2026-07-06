@@ -927,7 +927,10 @@ body {
 .detail-flow-section {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+}
+
+.detail-flow-section[open] > .flow-title {
+  margin-bottom: 24px;
 }
 
 .flow-title {
@@ -935,6 +938,29 @@ body {
   font-weight: 600;
   color: var(--color-text-primary);
   margin: 0;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-sm);
+}
+
+.flow-title::-webkit-details-marker { display: none; }
+
+.flow-title::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  flex-shrink: 0;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform var(--transition-fast);
+}
+
+.detail-flow-section[open] > .flow-title::after {
+  transform: rotate(-135deg);
 }
 
 .flow-steps {
