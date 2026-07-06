@@ -1,5 +1,30 @@
 # Changelog — omo-web-astro
 
+## [1.6.2] — 2026-07-06
+
+Ajuste editorial y legal del sitio para alinear el lenguaje de OMO, corregir matices narrativos en `Mi historia` y actualizar Términos según el funcionamiento real del producto.
+
+### Home
+
+- **Lenguaje de onboarding alineado con OMO** — `micro-apps` se sustituye por `Pocket Tools` en el hero y en la introducción del catálogo
+- **Extracto de historia corregido** — el teaser `El origen de OMO` se ajusta a `ordenador viejo` y se unifica el tono editorial
+
+### Mi Historia
+
+- **Narrativa reescrita en puntos clave** — ajustes en 2013, 2015, 2020, 2023, 2025 y 2026 para reflejar mejor la voz del fundador, la preferencia por el ecosistema Apple y el cierre aspiracional
+- **Terminología y ortografía pulidas** — `Mi historia` en capitalización natural, `máquina` en lugar de `computadora`, `Mac` unificado en masculino y `navegación` corregido en captions
+
+### Glosario
+
+- **Diseño Centrado en la Vida reposicionado** — deja de presentarse como un concepto introducido por OMO y pasa a describirse como un enfoque de diseño que OMO aplica
+
+### Términos
+
+- **Copy legal afinado** — ajustes de estilo como `OMO u OMONI`, `a la mayor brevedad` y capitalización más natural en títulos
+- **Terminación adaptada al producto real** — se elimina la idea de suspensión remota de acceso y se aclara que la versión actual no gestiona cuentas ni controla datos locales del usuario
+- **Contacto ampliado** — la sección final invita también a escribir si se quiere formar parte del equipo creador
+- **Fecha de actualización** — `Términos` pasa a `6 de julio de 2026`
+
 ## [1.6.1] — 2026-07-06
 
 Corrección de la sección "Cómo funciona" de `/omoni`, que describía un flujo desactualizado respecto a la app real (grupos, dashboard, modos de entrada, nombres de pantallas).
