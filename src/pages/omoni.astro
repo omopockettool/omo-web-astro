@@ -39,12 +39,20 @@ import Footer from '../components/Footer.astro';
       </div>
 
       <div class="detail-video-section">
-        <h2 class="video-title" data-i18n="video.title">Mira OMONI en acción</h2>
-        <div class="video-container">
-          <video controls controlsList="nodownload" preload="metadata">
-            <source src="/clips/omoni-en-accion.mov" type="video/mp4" />
-            <span data-i18n="video.unsupported">Tu navegador no soporta la etiqueta de vídeo.</span>
-          </video>
+        <h2 class="video-title" data-i18n="video.title">Capturas de OMONI</h2>
+        <div class="screenshot-gallery">
+          <figure class="screenshot-card">
+            <img src="/assets/omoni/omoni-hoy.png" alt="Vista Hoy de OMONI" data-i18n-alt="gallery.screen1.alt" loading="lazy" />
+          </figure>
+          <figure class="screenshot-card">
+            <img src="/assets/omoni/omoni-mes.png" alt="Vista Mes de OMONI" data-i18n-alt="gallery.screen2.alt" loading="lazy" />
+          </figure>
+          <figure class="screenshot-card">
+            <img src="/assets/omoni/omoni-simple.png" alt="Entrada simple en OMONI" data-i18n-alt="gallery.screen3.alt" loading="lazy" />
+          </figure>
+          <figure class="screenshot-card">
+            <img src="/assets/omoni/omoni-lista.png" alt="Entrada en lista en OMONI" data-i18n-alt="gallery.screen4.alt" loading="lazy" />
+          </figure>
         </div>
       </div>
 

@@ -1,5 +1,16 @@
 # Changelog — omo-web-astro
 
+## [1.6.3] — 2026-07-09
+
+Actualización visual de la ficha pública de OMONI para sustituir el vídeo por capturas reales de la app y afinar su presentación.
+
+### OMONI
+
+- **Vídeo reemplazado por capturas** — la sección principal de `/omoni` ahora muestra 4 screenshots reales de la app en este orden: `Hoy`, `Mes`, `Simple`, `Lista`
+- **Galería más limpia** — se eliminan los marcos blancos y el tratamiento visual pesado alrededor de las capturas para dejarlas más directas
+- **Copy e i18n ajustados** — el heading deja de hablar de vídeo y pasa a presentar la sección como galería/capturas en `es` y `en`
+- **Assets públicos añadidos** — las nuevas imágenes de OMONI quedan servidas desde `public/assets/omoni/`
+
 ## [1.6.2] — 2026-07-06
 
 Ajuste editorial y legal del sitio para alinear el lenguaje de OMO, corregir matices narrativos en `Mi historia` y actualizar Términos según el funcionamiento real del producto.
