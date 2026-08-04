@@ -1,5 +1,16 @@
 # Changelog — omo-web-astro
 
+## [1.6.4] — 2026-08-04
+
+Actualización pública de OMONI para reflejar que la app ya está disponible en App Store y ajustar la señal visual de disponibilidad en la web.
+
+### OMONI
+
+- **Badge de App Store activado** — el icono de `Download on the App Store` en `/omoni` deja de estar deshabilitado y enlaza ya a la ficha pública de OMONI en App Store
+- **Estado de disponibilidad actualizado** — OMONI deja de mostrarse como `En progreso` y pasa a `Disponible` tanto en la home como en su página de detalle
+- **Chip alineado con la UI de producto** — el badge de `Disponible` adopta el mismo lenguaje visual que los chips de funcionalidades de OMONI, evitando la lectura de estado bloqueado o pendiente
+- **Accesibilidad e i18n afinados** — textos alternativos del badge de App Store y nuevas claves de estado ajustadas en `es` y `en`
+
 ## [1.6.3] — 2026-07-09
 
 Actualización visual de la ficha pública de OMONI para sustituir el vídeo por capturas reales de la app y afinar su presentación.

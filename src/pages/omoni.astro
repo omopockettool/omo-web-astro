@@ -14,16 +14,22 @@ import Footer from '../components/Footer.astro';
         <div class="detail-header-content">
           <div class="detail-title-row">
             <h1 transition:name="omoni-title" class="detail-title">OMONI</h1>
-            <span class="status-badge in-progress">
-              <span data-i18n="status.progress">En progreso</span>
+            <span class="status-badge available">
+              <span data-i18n="status.available">Disponible</span>
               <span class="led-indicator"></span>
             </span>
           </div>
           <span class="detail-chakra-label" data-i18n="label.tool">Pocket Tool Nº 1</span>
         </div>
-        <div class="detail-apple-link disabled">
-          <img src="/assets/apple-store-icon.svg" alt="App Store - Coming Soon" class="detail-apple-icon" data-i18n-alt="apple.alt" />
-        </div>
+        <a
+          class="detail-apple-link"
+          href="https://apps.apple.com/es/app/omoni/id6788851434"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Descargar OMONI en el App Store"
+        >
+          <img src="/assets/apple-store-icon.svg" alt="Descargar en el App Store" class="detail-apple-icon" data-i18n-alt="apple.alt" />
+        </a>
       </div>
 
       <div class="detail-description-grid">

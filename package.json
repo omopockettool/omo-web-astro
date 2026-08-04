@@ -1,7 +1,7 @@
 {
   "name": "omo-web-astro",
   "type": "module",
-  "version": "1.6.3",
+  "version": "1.6.4",
   "engines": {
     "node": ">=22.12.0"
   },
